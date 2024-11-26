@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Delete Time Tracking Entry</h1>
+    <form id="delete-form">
+        <label for="date">Select Date:</label>
+        <select id="date" required>
+            <option value="">-- Select a Date --</option>
+        </select><br><br>
+        
+        <label for="session">Select Session (Start - End):</label>
+        <select id="session" required>
+            <option value="">-- Select a Session --</option>
+        </select><br><br>
+        
+        <button type="submit">Delete Entry</button>
+    </form>
+    <button id="back-home">Back to Home</button>
+    <button id="back-worker">Back to Worker</button>
+
+    <script src="delete_entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Time Tracker</h1>
+        <label for="person-name">Enter Your Name:</label>
+        <input type="text" id="person-name" placeholder="Your Name">
+        <button id="start-tracking">Start Tracking</button>
+    </div>
+
+    <script>
+        // Redirect to the tracking page with the person's name
+        document.getElementById('start-tracking').addEventListener('click', () => {
+            const name = document.getElementById('person-name').value.trim();
+            if (!name) {
+                alert('Please enter your name.');
+                return;
+            }
+            localStorage.setItem('currentPerson', name); // Save the name to localStorage
+            window.location.href = 'tracking.html'; // Redirect to tracking page
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #444;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, button, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#delete-entry-page {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#delete-entry-page:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+#delete-entry-page {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#delete-entry-page:hover {
+    background-color: #d32f2f; /* Darker red */
+}

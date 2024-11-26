@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker - Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="home-button">Home</button>
+        <h1>Time Tracking</h1>
+        <h2 id="welcome-message"></h2>
+
+        <!-- Start/Stop Tracking Section -->
+        <div>
+            <h3>Live Time Tracking</h3>
+            <button id="start-tracking">Start</button>
+            <button id="stop-tracking" disabled>Stop</button>
+            <p id="timer-display">Timer: 00:00:00</p>
+        </div>
+
+        <!-- Manual Time Entry Section -->
+        <div>
+            <h3>Manual Time Entry</h3>
+            <label for="start-time">Start Time: </label>
+            <input type="time" id="start-time">
+            <label for="stop-time">Stop Time: </label>
+            <input type="time" id="stop-time">
+            <button id="add-manual-time">Add Interval</button>
+        </div>
+
+        <!-- Live Tracking Indicator -->
+        <div id="live-indicator" style="display: none;">
+            <span class="indicator"></span> <span>Live Tracking Active</span>
+        </div>
+
+        <!-- Last Start Time Note -->
+        <p id="last-start-note" style="color: #666; font-style: italic;"></p>
+
+        <!-- Download Times Button -->
+        <button id="download-times">Download Times</button>
+        <label for="upload-file" id="upload-label" class="upload-button">Upload Tracking File</label>
+        <input type="file" id="upload-file" style="display: none;">
+
+        <button id="delete-entry-page">Manage Entries</button>
+
+        
+
+        <!-- Time Table -->
+        <h3>Tracked Times</h3>
+        <table id="time-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time Tracked</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="tracking.js"></script>
+
+</body>
+</html>
